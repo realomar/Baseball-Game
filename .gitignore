@@ -17,6 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# BlueJ files
+*.ctxt
+*.class
+
 # =========================
 # Operating System Files
 # =========================
