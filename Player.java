@@ -43,5 +43,9 @@ public class Player{
         return homeRunChance;
     }
     
-    public void Hit() 
+    public int Hit(){
+        
+    }
+    
+    
 }
