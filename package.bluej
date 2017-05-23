@@ -10,6 +10,7 @@ package.numTargets=3
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
+<<<<<<< HEAD
 target1.editor.height=1040
 target1.editor.width=960
 target1.editor.x=960
@@ -17,6 +18,15 @@ target1.editor.y=0
 target1.height=50
 target1.name=Player
 target1.naviview.expanded=false
+=======
+target1.editor.height=700
+target1.editor.width=900
+target1.editor.x=469
+target1.editor.y=245
+target1.height=50
+target1.name=Player
+target1.naviview.expanded=true
+>>>>>>> origin/master
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
