@@ -44,7 +44,8 @@ public class Player{
     }
     
     public int Hit(){
-        
+        //placeholder
+        return 0;
     }
     
     
