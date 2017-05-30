@@ -44,9 +44,26 @@ public class Player{
     }
     
     public int Hit(){
-        //placeholder
+        double x = Math.random();
+        if( x < strikeOutChance){
+        System.out.println("stttrrrriiiiikkkkeeee 3 you're out!");
         return 0;
+       }
+       else if( x<strikeOutChance + singleChance){
+        System.out.println("And that's a single for" + name);
+        return 1;
+       }
+       else if( x< strikeOutChance + singleChance + doubleChance){
+        System.out.println("That's a double for" + name);
+        return 2;
+       }
+       else if( x< strikeOutChance + singleChance + doubleChance + tripleChance){
+        System.out.println("That's a triple for" + name);
+        return 3;
+       }
+       else {
+        System.out.println("It's a home run for" + name);
+        return 4;
+       }
     }
-    
-    
 }
