@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class Team{
     //fields
-    private String name;
-    
+    private String teamName;
+    private Player[] roster;
     public Team(String name){
-
+        Player[]
     }
 }
+
