@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ScannerTest{
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("BaseballTest.csv"));
+        Scanner scanner = new Scanner(new File("BaseballStats.csv"));
         scanner.useDelimiter(",");
         while(scanner.hasNext()){
             System.out.print(scanner.next()+"|");
