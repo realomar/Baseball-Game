@@ -12,7 +12,7 @@ public class Team{
         teamName = name;
         for( int i=0 ; i<9 ; i++)
         {
-            Player()
+            Player
         }
         
         // insert csv scanner;
