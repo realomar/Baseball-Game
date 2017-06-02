@@ -1,5 +1,6 @@
 public class Game
 {
+}
     
 //methods
 public int getRuns(Team x)
