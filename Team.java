@@ -14,8 +14,8 @@ public class Team{
         {
             Scanner scanner = new Scanner(new File("BaseballStats.csv"));
             scanner.useDelimiter(",");
-            roster.add(new Player(scanner.next(), scanner.nextDouble(), scanner.nextDouble(),
-                                  scanner.nextDouble(), scanner.nextDouble(), scanner.next()));
+            roster.add(new Player(scanner.next(), scanner.nextDouble(), scanner.nextDouble(),scanner.nextDouble(),
+                                  scanner.nextDouble(), scanner.nextDouble()));
         }
         
         // insert csv scanner;
