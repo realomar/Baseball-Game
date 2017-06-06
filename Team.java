@@ -17,6 +17,8 @@ public class Team{
                     roster.add(new Player(scanner.next(), scanner.nextDouble(), scanner.nextDouble(),scanner.nextDouble(),
                                       scanner.nextDouble(), scanner.nextDouble()));
                 }
+            }
+        
             catch(FileNotFoundException ex){
                 System.out.println("No team found.");
             }
