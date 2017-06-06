@@ -10,6 +10,7 @@ public class Team{
     //constructor
     public Team(String name){
         teamName = name;
+        
         for( int i=0 ; i<9 ; i++)
         {
             Player
@@ -17,6 +18,8 @@ public class Team{
         
         // insert csv scanner;
     }
+    
+    
     
 }
 

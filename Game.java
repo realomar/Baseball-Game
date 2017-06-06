@@ -2,12 +2,12 @@ public class Game
 {
 
 //methods
-
+int numBases;
 public int teamHits(Team x)
 {
     //Team X hits, loops through team until there is three outs, then returns amount of hits / 4
     int strikeouts = 0;
-    int numBases = 0;
+    numBases = 0;
     while(strikeouts < 3)
     {
         numBases += Player.Hit();
