@@ -10,16 +10,17 @@ public class Team{
     //constructor
     public Team(String name){
         teamName = name;
-        for( int i=0 ; i<9 ; i++)
-        {
-            Scanner scanner = new Scanner(new File("BaseballStats.csv"));
-            scanner.useDelimiter(",");
-            roster.add(new Player(scanner.next(), scanner.nextDouble(), scanner.nextDouble(),scanner.nextDouble(),
-                                  scanner.nextDouble(), scanner.nextDouble()));
+            try{
+                Scanner scanner = new Scanner(new File("BaseballStats.csv"));
+                scanner.useDelimiter(",");
+                for(int i = 0; i < 9; i++){
+                    roster.add(new Player(scanner.next(), scanner.nextDouble(), scanner.nextDouble(),scanner.nextDouble(),
+                                      scanner.nextDouble(), scanner.nextDouble()));
+                }
+            catch(FileNotFoundException ex){
+                System.out.println("No team found.");
+            }
         }
         
         // insert csv scanner;
     }
-    
-}
-
