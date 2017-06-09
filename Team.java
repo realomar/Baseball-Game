@@ -5,21 +5,29 @@ import java.util.ArrayList;
 public class Team{
     //fields
     private String teamName;
-    private ArrayList<Player> roster = new ArrayList<Player>();
+    private ArrayList<Player> roster;
     
     //constructor
     public Team(String name){
         teamName = name;
-        
-        for( int i=0 ; i<9 ; i++)
-        {
-            Player
+        ArrayList<Player> roster = new ArrayList<Player>();
+        try{
+            Scanner scanner = new Scanner(new File("BaseballStats.csv"));
+            scanner.useDelimiter(",");
+            for( int i=0 ; i<9 ; i++)
+            {
+                roster.add(new Player(scanner.next(), scanner.nextDouble(), scanner.nextDouble(), scanner.nextDouble(),
+                scanner.nextDouble(), scanner.nextDouble()));
+            }
         }
-        
-        // insert csv scanner;
+        catch(FileNotFoundException ex) {
+            System.out.println("No team found");
     }
-    
-    
-    
+}
+
+
+public ArrayList<Player> getRoster(){
+    return roster;
+}
 }
 
